@@ -13,6 +13,8 @@ const {
  * paths:
  *   /dist/api/v1/schools/:
  *     post:
+ *       tags:
+ *         - schools
  *       summary: Crea una nueva escuela
  *       consumes:
  *         - application/json
@@ -29,6 +31,8 @@ const {
  *         400:
  *           description: Ocurrió un error en la creación de la escuela
  *     get:
+ *       tags:
+ *         - schools
  *       summary: Obtiene las escuelas
  *       responses:
  *         200:
@@ -37,6 +41,8 @@ const {
  *           description: Ocurrió un error al obtener el listado de escuelas
  *   /dist/api/v1/schools/{school_id}:
  *     put:
+ *       tags:
+ *         - schools
  *       summary: Modifica una escuela existente
  *       consumes:
  *         - application/json
@@ -59,6 +65,8 @@ const {
  *         400:
  *           description: Ocurrió un error al modificar la escuela
  *     delete:
+ *       tags:
+ *         - schools
  *       summary: Elimina una escuela existente
  *       parameters:
  *        - in: path
