@@ -1,0 +1,36 @@
+{
+  "name": "dist-api-rest",
+  "version": "1.0.0",
+  "description": "API REST para sistemas distribuidos",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "serve": "nodemon server.js"
+  },
+  "author": "Alba, Gabriel y Miguel",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.0",
+    "compression": "^1.7.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "helmet": "^4.4.1",
+    "http-errors": "^1.8.0",
+    "humps": "^2.0.1",
+    "moment": "^2.29.1",
+    "pg-promise": "^10.9.2",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.13",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
+  }
+}
