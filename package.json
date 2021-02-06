@@ -21,6 +21,8 @@
     "humps": "^2.0.1",
     "moment": "^2.29.1",
     "pg-promise": "^10.9.2",
+    "swagger-jsdoc": "^6.0.2",
+    "swagger-ui-express": "^4.1.6",
     "winston": "^3.3.3"
   },
   "devDependencies": {

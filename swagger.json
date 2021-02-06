@@ -1,0 +1,15 @@
+{
+  "swaggerDefinition": {
+    "info": {
+      "version": "1.0.0",
+      "title": "University API",
+      "description": "API de la actividad \"Diseño e implementación de un servicio web\". Sistemas Distribuidos. UCAB",
+      "contact": {
+        "name": "Peña, Miguel. Sánchez, Alba. Terán, Gabriel",
+        "url": "https://github.com/mapf98/dist-api-rest"
+      }
+    }
+  },
+  "basePath": "/",
+  "apis": ["./module/*/*.router.js"]
+}
