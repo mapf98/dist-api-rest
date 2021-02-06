@@ -11,6 +11,8 @@ const swaggerDocs = swaggerJSDoc(swagger);
  *
  * /dist/api/v1/utils/verify:
  *   get:
+ *     tags:
+ *       - utils
  *     summary: Verifica la API
  *     description: Verifica que la API esté activa
  *     produces:
@@ -26,6 +28,8 @@ router.use("/docs", swaggerUI.serve);
  *
  * /dist/api/v1/utils/docs:
  *   get:
+ *     tags:
+ *       - utils
  *     summary: Documentación de la API
  *     description: Documentación de la API con Swagger
  *     produces:

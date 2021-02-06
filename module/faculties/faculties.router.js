@@ -13,6 +13,8 @@ const {
  * paths:
  *   /dist/api/v1/faculties/:
  *     post:
+ *       tags:
+ *         - faculties
  *       summary: Crea una nueva facultad
  *       consumes:
  *         - application/json
@@ -28,6 +30,8 @@ const {
  *         400:
  *           description: Ocurrió un error en la creación de la facultad
  *     get:
+ *       tags:
+ *         - faculties
  *       summary: Obtiene las facultades
  *       responses:
  *         200:
@@ -36,6 +40,8 @@ const {
  *           description: Ocurrió un error al obtener el listado de facultades
  *   /dist/api/v1/faculties/{faculty_id}:
  *     put:
+ *       tags:
+ *         - faculties
  *       summary: Modifica una facultad existente
  *       consumes:
  *         - application/json
@@ -57,6 +63,8 @@ const {
  *         400:
  *           description: Ocurrió un error al modificar la facultad
  *     delete:
+ *       tags:
+ *         - faculties
  *       summary: Elimina una facultad existente
  *       parameters:
  *        - in: path

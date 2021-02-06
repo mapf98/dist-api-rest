@@ -32,4 +32,40 @@ module.exports = {
       res.sendStatus(201);
     }
   },
+  updatePerson: async (req, res) => {
+    const person = {
+      dni: req.body.dni,
+      first_name: req.body.first_name,
+      last_name: req.body.last_name,
+    };
+    const response = await personsModel.updatePerson(
+      req.connection,
+      req.params.person_id,
+      person
+    );
+
+    if (response instanceof Error) {
+      logger.error(`Error al modificar la persona [${response}]`);
+      res.sendStatus(400);
+    } else {
+      logger.info(`Persona modificada satisfactoriamente [${person.name}]`);
+      res.sendStatus(200);
+    }
+  },
+  deletePerson: async (req, res) => {
+    const response = await personsModel.deletePerson(
+      req.connection,
+      req.params.person_id
+    );
+
+    if (response instanceof Error) {
+      logger.error(`Error al eliminar la persona [${response}]`);
+      res.sendStatus(400);
+    } else {
+      logger.info(
+        `Persona eliminada satisfactoriamente [${req.params.person_id}]`
+      );
+      res.sendStatus(200);
+    }
+  },
 };
